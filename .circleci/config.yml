@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: rips/rips-cli:circleci
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - run: rips-cli -vvv
