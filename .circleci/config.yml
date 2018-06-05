@@ -8,4 +8,4 @@ jobs:
 
     steps:
       - checkout
-      - run: rips-cli -vvv
+      - run: rips-cli -vvv rips:scan:start -a $RIPS_APP_ID -p ~/repo/ -t 1
